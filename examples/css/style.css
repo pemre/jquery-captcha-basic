@@ -1,0 +1,148 @@
+/* ========================
+ *  CSS RESET - YUI 3.18.1
+ *  http://yuilibrary.com/yui/docs/cssreset/
+ * ======================== */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}
+
+
+/* ====================
+ *  PARAGRAPH/TABLE ELEMENTS
+ * ==================== */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/* ==================
+ *  BODY & CONTAINER
+ * ================== */
+body {
+    color: #3a3a3a;
+    background-color: #fff;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+.container {
+    position: relative;
+    background-color: #efefef;
+    padding: 2em;
+    height: 100%;
+    max-width: 60%;
+    float: none;
+    margin: 2em auto;
+    border-bottom: 4px solid #ccc;
+}
+.container:before, .container:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+}
+.container:before {
+    border-top: solid 20px #fff;
+    border-right: solid 20px #fff;
+    border-left: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+}
+.container:after {
+    border-bottom: solid 20px #5b7093;
+    border-left: solid 20px #5b7093;
+    border-right: solid 20px transparent;
+    border-top: solid 20px transparent;
+}
+
+
+/* ================
+ *  GRID STRUCTURE
+ * ================ */
+
+/* --- Main --- */
+* {
+    box-sizing: border-box;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0.3em;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* --- For mobile (Default view) --- */
+[class*="col-"] {
+    width: 100%;
+}
+/* --- For tablets --- */
+@media only screen and (min-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+/* --- For desktop --- */
+@media only screen and (min-width: 1000px) {
+    /* --- Define 12 columns grid --- */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/* ================
+ *  FORM ELEMENTS
+ * ================ */
+input[type="email"],
+input[type="text"],
+textarea {
+    padding: .5rem 1rem;
+    border: none;
+    width: 100%;
+    color: #7a7a7a;
+}
+input[type="submit"] {
+    background-color: #efefef;
+    color: #3a3a3a;
+    cursor: pointer;
+    float: right;
+    padding: 0 2rem;
+    height: 2em;
+    border: solid 4px #1bbd4f;
+
+    -webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+input[type="submit"]:hover {
+    background-color: #1bbd4f;
+    color: #fff;
+}
+input[type="submit"]:disabled {
+    border: solid 4px #ccc;
+    color: #999;
+}
+input[type="submit"]:disabled:hover {
+    background-color: #efefef;
+}
+
+
+/* ==================
+ *  CAPTCHA ELEMENTS
+ * ================== */
+#captchaInput {
+    width: 2.5em;
+    margin-left: .5em;
+}

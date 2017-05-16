@@ -1,0 +1,38 @@
+{
+  "name": "jquery-captcha-basic",
+  "title": "jQuery Captcha Basic",
+  "description": "A basic math captcha plugin for jQuery",
+  "version": "1.0.0",
+  "main": "src/jquery.captcha.basic.js",
+  "homepage": "https://github.com/pemre/jquery-captcha-basic",
+  "author": {
+    "name": "Emre Piskin",
+    "url": "http://rencs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pemre/jquery-captcha-basic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pemre/jquery-captcha-basic/issues"
+  },
+  "license": "GPL-3.0",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jquery",
+    "captcha",
+    "javascript"
+],
+  "dependencies": {
+    "jquery": ">=1.12.4 <4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^2.1.2"
+  },
+  "scripts": {
+    "prepare": "gulp"
+  }
+}

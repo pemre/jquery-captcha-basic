@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="jQuery Captcha Basic plugin demo page">
+  <meta name="author" content="Emre Pişkin">
+  <title>jQuery Captcha Basic plugin demo by Emre Pişkin</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+  <!-- Basic CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Our plugin: jQuery Tooltip Basic plugin by Emre Pişkin -->
+  <script type="text/javascript" src="../src/jquery.captcha.basic.min.js"></script>
+
+  <script type="text/javascript">
+      /* ===============
+       *  DEMO EXAMPLE
+       * =============== */
+      $(document).ready(function () {
+
+          $('#my-form').captcha();
+
+      });
+  </script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <small></small>
+    <form id="my-form">
+      <div class="col-12">
+        <small>jQuery Captcha Basic plugin demo by Emre Piskin. <a href="https://github.com/pemre/jquery-captcha-basic"
+                                                                   target="_blank">Go to the plugin page</a></small>
+        <h1>Contact Form</h1>
+      </div>
+      <div class="col-12">
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="col-12">
+        <textarea name="message" placeholder="Your message" required></textarea>
+      </div>
+      <div class="col-12">
+        <input type="submit" value="Send">
+      </div>
+    </form>
+  </div>
+</div>
+</body>

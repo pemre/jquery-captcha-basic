@@ -2,7 +2,7 @@
   "name": "jquery-captcha-basic",
   "title": "jQuery Captcha Basic",
   "description": "A basic math captcha plugin for jQuery",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/jquery.captcha.basic.js",
   "homepage": "https://github.com/pemre/jquery-captcha-basic",
   "author": {
@@ -23,7 +23,7 @@
     "jquery",
     "captcha",
     "javascript"
-],
+  ],
   "dependencies": {
     "jquery": ">=1.12.4 <4.0"
   },

@@ -1,4 +1,6 @@
 # jQuery Captcha Basic
+[![npm](https://img.shields.io/npm/v/jquery-captcha-basic.svg?style=flat-square)](https://www.npmjs.com/package/jquery-captcha-basic) [![npm](https://img.shields.io/npm/dt/jquery-captcha-basic.svg?style=flat-square)](https://www.npmjs.com/package/jquery-captcha-basic) [![npm](https://img.shields.io/npm/l/jquery-captcha-basic.svg?style=flat-square)](https://www.npmjs.com/package/jquery-captcha-basic)
+
 A basic math captcha plugin for jQuery
 
 ## Demo
@@ -13,6 +15,7 @@ npm install jquery-captcha-basic
 * Add the JavaScript file reference to your web site.
 * Select the form you want to show a captcha for.
 * Run the *captcha()* method on the form with the options you want.
+* Plugin will add a simple math sum text and an input box before the submit button.
 
 ### Initialization
 The basic initialization example:

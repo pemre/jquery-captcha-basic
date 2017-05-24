@@ -25,7 +25,7 @@
 
         // Insert captcha text and input before the submit button with the given ID's
         $('<label id="' + params.idCaptchaText + '"></label>').insertBefore(submit);
-        $('<input id="' + params.idCaptchaInput + '" type="text" required>').insertBefore(submit);
+        $('<input id="' + params.idCaptchaInput + '" aria-label="Captcha Input" type="text" required>').insertBefore(submit);
 
         // Select text and input elements to fill
         var label = this.find('#' + params.idCaptchaText);
